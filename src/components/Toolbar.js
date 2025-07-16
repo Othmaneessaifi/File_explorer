@@ -1,4 +1,4 @@
-mport React, { useContext, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { FileContext } from '../context/FileContext';
 
 const Toolbar = () => {
@@ -19,13 +19,13 @@ const Toolbar = () => {
           className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
           onClick={() => createFile(name)}
         >
-          + Fichier
+          📄 Fichier
         </button>
         <button
           className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
           onClick={() => createFolder(name)}
         >
-          + Dossier
+          📁 Dossier
         </button>
       </div>
     </div>
